@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--.navbar 用来定义导航栏，.navbar-expand{-sm|-md|-lg|-xl} 用于响应式布局（就是在哪个断点响应变换布局，导航会在lg断点处的自动响应轻型导航栏中包含的所有子组件） -->
+            <!-- .sticky-top 随滚动条固定在窗口顶部，fixed-top固定在顶部，fixed-bottom固定在底部-->
+            <div class="container">
+                <!-- 把导航条包裹在一个 .container容器中，从而使之在网页中呈现居中效果（或在导航栏内部居中） -->
+                <a class="navbar-brand" href="#">个人博客</a>
+                <span class="navbar-text sr-only">我是居中显示文本</span>
+                <!-- 可以使用.navbar-text选择器来包裹文字-这已经对文本字符串的垂直对齐、水平间距作了处理优化。 -->
+                <!-- .navbar-brand 项目名称 logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- .navbar-toggler 用于折叠插件（右上角按钮）的显示隐藏，使用id 和 data-target 搭配-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- .collapse.navbar-collapse用于通过父断点进行分组和隐藏导航列内容 （就是显示隐藏导航的折叠内容）-->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- .navbar-nav 提供完整的高和轻便的导航（包括对下拉菜单的支持） -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">网站首页<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">博客日记</a>
+                        </li>
+                        <!-- 下拉菜单暂时不需要 -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">学习记录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">时间流水</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">不让点击</a>
+                            <!-- .nav-link.disabled 不能点击 -->
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!-- .form-inline（内联表单）放置各种表单控制元件和组件 -->
+                        <input class="form-control mr-sm-2" type="search" placeholder="请输入标题" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- 对于不需要折叠（隐藏）的导航栏，请在导航栏上增加.navbar-expand class样式来定义，对于总是要折叠（隐藏）的导航栏，请不要加任何的 .navbar-expand class样式。 -->
+
+    </header>
+
+</body>
+
+</html>
